@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: grid;
+}
+
+/*SECCION DEL FORMULARIO*/
+#sectionform{
+    background-color: aquamarine;
+    padding: 2em;
+}
+
+#sectionform > form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#sectionform > h1{
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 3rem;
+}
+
+#sectionform > form >input{
+    padding: 1em 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid rgb(90, 89, 89);
+    background-color: bisque;
+}
+
+#sectionform > form >input:hover{
+    border: 2px solid rgb(243, 131, 215);
+}
+
+#sectionform > form > button {
+    padding: 1em 0.5em;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(199, 15, 15, 0.548);
+    color: white;
+}
+
+#sectionform > form > button:hover {
+    transform: scale(0.97);
+    background-color: rgba(255, 137, 137, 0.548);
+    cursor: pointer;
+}
+
+/*SECCION DEL TABLA*/
+
+#sectiontable{
+    background-color: blanchedalmond;
+}
+
+#sectiontable > table{
+    width: 100%;
+}
+
+#sectiontable > table > thead > tr > th{
+    background-color: rgb(36, 34, 34);
+    color: bisque;
+    padding: 0.5em 0.25em;
+}
+
+#sectiontable > table > tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#sectiontable > table > tbody > tr, td{
+    text-align: center;
+    padding: 0.25em;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}

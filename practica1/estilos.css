@@ -1,0 +1,25 @@
+body {
+    position: relative;
+    background: #F4F4D9;
+    color: #2D211F;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: sans-serif;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 15px 30px;
+}
+.navegador a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffF;
+    padding: 6px 10px;
+    background-color: #2D211F;
+    border-radius: 5px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
