@@ -6,22 +6,18 @@
     <title>Disgustos</title>
 </head>
 <body>
-    <p>De lo que no gusta:
-
-    </p>
-    <ul>
-        <li>
-            competiciones
-        </li>
-        <li>
-            el gusto de programar ya paso
-        </li>
-        <li>
-            hubo un tiempo de querer conocer de desarrollo web
-        </li>
-        <li>
-            volver a recordar la programacion
-        </li>
-    </ul>
+    <h1>Esto es lo que no gusta </h1>
+    <img id="midisgust1" onclick="changeImage()" src="./imagen/disgust_1.jpg" width="100">
+    <p>Click sobre la imagen.</p>
+    <script>
+        function changeImage() {
+            var image = document.getElementById('midisgust1');
+            if (image.src.match("./imagen/disgust_1.jpg")) {
+                image.src = "./imagen/disgust_2.png";
+            }else {
+                image.src = "./imagen/disgust_1.jpg";
+            }
+        }
+    </script>
 </body>
 </html>

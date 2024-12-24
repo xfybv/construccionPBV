@@ -30,8 +30,19 @@
     <div id="contenedor"> 
         <img id="foto" src="imagen/lafoto.jpeg">
         <p id="parrafo">mi nombre es Porfirio Barcaya<br> vivo en villazon <br> es de la provincia Modesto Omiste<br> construyendo las paginas web...</p>
-        </div>
+    </div>
     
-
+    <p id="id1" title="Hola" style="background-color:blueviolet">hi</p>
+    <button type="button" onclick="funcionA()"> Cambiar color.. </button>
+    <script>
+        function funcionA() {
+            if (document.getElementById("id1").innerHTML.match('hi')) {
+                document.getElementById("contenedor").style = 'background-color:green';
+                document.getElementById("parrafo").style = 'color:blueviolet'; 
+                document.getElementById("id1").style = 'background-color:green';
+                document.getElementById("id1").innerHTML ='Me cambie';
+            }
+        }
+    </script>
 </body>
 </html>
